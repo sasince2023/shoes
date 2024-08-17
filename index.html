@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details Page</title>
+   <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">SA Since 2023</div>
+        <ul>
+            <i class="fas fa-shopping-cart"></i>
+        </ul>
+    </nav>
+
+    <div class="flex-box">
+        <div class="left">
+            <div class="big-img">
+                <img src="img/p1.png">
+            </div>
+            <div class="images">
+                <div class="small-img">
+                    <img src="img/Screenshot 2024-08-17 110717.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/Screenshot 2024-08-17 110738.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/Screenshot 2024-08-17 110751.png" onclick="showImg(this.src)">
+                </div>
+                <div class="small-img">
+                    <img src="img/Screenshot 2024-08-17 110803.png" onclick="showImg(this.src)">
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="pname"> JORDAN RETRO 4 ‘SB PINE GREEN’ </div>
+            <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">₹2509</div>
+            <div class="quantity">
+                <p>Quantity :</p>
+                <input type="number" min="1" max="5" value="1">
+            </div>
+            <div class="btn-box">
+                <a style="padding-center: 20px; font-size:20px;" href="https://lqqhtbz1alkzzgcyjvefog.on.drv.tw/contact%20form/intex123.html">
+                <button class="buy-btn">Buy Now</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let bigImg = document.querySelector('.big-img img');
+        function showImg(pic){
+            bigImg.src = pic;
+        }
+    </script>
+</body>
+</html>
